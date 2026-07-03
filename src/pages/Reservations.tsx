@@ -65,7 +65,7 @@ export default function Reservations() {
             {/* Image Side */}
             <div className="lg:w-1/2 relative min-h-[300px] lg:min-h-full">
               <img referrerPolicy="no-referrer" 
-                src="/images/img_6ba0ff72.jpg" 
+                src="https://images.unsplash.com/photo-1501339817388-d1d11721f542?auto=format&fit=crop&w=800&q=80" 
                 alt="Café table" 
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
@@ -91,8 +91,8 @@ export default function Reservations() {
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 mt-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-coffee-900">Full Name</label>
-                      <input 
+                      <label htmlFor="name" className="text-sm font-medium text-coffee-900">Full Name</label>
+                      <input id="name" 
                         {...register('name')}
                         className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
                         placeholder="John Doe"
@@ -101,8 +101,8 @@ export default function Reservations() {
                     </div>
                     
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-coffee-900">Email Address</label>
-                      <input 
+                      <label htmlFor="email" className="text-sm font-medium text-coffee-900">Email Address</label>
+                      <input id="email" 
                         type="email"
                         {...register('email')}
                         className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
@@ -114,8 +114,8 @@ export default function Reservations() {
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-coffee-900">Date</label>
-                      <input 
+                      <label htmlFor="date" className="text-sm font-medium text-coffee-900">Date</label>
+                      <input id="date" 
                         type="date"
                         {...register('date')}
                         className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
@@ -124,8 +124,8 @@ export default function Reservations() {
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-coffee-900">Time</label>
-                      <select 
+                      <label htmlFor="time" className="text-sm font-medium text-coffee-900">Time</label>
+                      <select id="time" 
                         {...register('time')}
                         className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
                       >
@@ -143,8 +143,8 @@ export default function Reservations() {
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-coffee-900">Guests</label>
-                      <select 
+                      <label htmlFor="guests" className="text-sm font-medium text-coffee-900">Guests</label>
+                      <select id="guests" 
                         {...register('guests')}
                         className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
                       >
@@ -160,8 +160,8 @@ export default function Reservations() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-coffee-900">Phone Number</label>
-                    <input 
+                    <label htmlFor="phone" className="text-sm font-medium text-coffee-900">Phone Number</label>
+                    <input id="phone" 
                       type="tel"
                       {...register('phone')}
                       className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
@@ -171,8 +171,8 @@ export default function Reservations() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-coffee-900">Special Requests (Optional)</label>
-                    <textarea 
+                    <label htmlFor="specialRequests" className="text-sm font-medium text-coffee-900">Special Requests (Optional)</label>
+                    <textarea id="specialRequests" 
                       {...register('requests')}
                       rows={3}
                       className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all resize-none"

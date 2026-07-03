@@ -16,14 +16,14 @@ const BLOG_POSTS_PREVIEW = [
     title: "The Art of the Perfect Pour-Over",
     category: "Brewing Guide",
     date: "May 15, 2024",
-    image: "/images/img_682d4b43.jpg"
+    image: "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
     title: "Summer Menu Highlight: Lavender Cold Brew",
     category: "Seasonal",
     date: "June 05, 2024",
-    image: "/images/img_212587f2.jpg"
+    image: "https://images.unsplash.com/photo-1521017432531-fbd92076e4fa?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -43,7 +43,7 @@ export default function Home() {
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
             <Image
-              src="/images/img_38464f4b.jpg"
+              src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80"
               alt="Café interior"
               className="w-full h-full object-cover scale-110 origin-top"
               fetchPriority="high"
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden">
                   <Image referrerPolicy="no-referrer" 
-                    src="/images/img_d7931340.jpg" 
+                    src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" 
                     alt="Barista crafting coffee" 
                     loading="lazy"
                     className="w-full h-full object-cover"
@@ -218,7 +218,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
                 <div className="w-full md:w-1/2">
                   <div className="relative aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                    <Image referrerPolicy="no-referrer" src="/images/img_097bf6cb.jpg" alt="Lavender Honey Latte" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
+                    <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1481833707121-59f4df66f73e?auto=format&fit=crop&w=800&q=80" alt="Lavender Honey Latte" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-6">
@@ -253,7 +253,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-24">
                 <div className="w-full md:w-1/2">
                   <div className="relative aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                    <Image referrerPolicy="no-referrer" src="/images/img_4f2049c4.jpg" alt="Smoked Maple Cold Brew" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
+                    <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=800&q=80" alt="Smoked Maple Cold Brew" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-6">
@@ -371,7 +371,7 @@ export default function Home() {
             >
               <input 
                 type="email" 
-                placeholder="Your email address" 
+                aria-label="Email address for newsletter signup" placeholder="Your email address" 
                 required 
                 className="flex-grow px-6 py-4 rounded-full bg-white border border-coffee-200 focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
               />
@@ -385,7 +385,7 @@ export default function Home() {
         {/* Final CTA */}
         <section className="relative py-32 bg-coffee-900 overflow-hidden">
           <div className="absolute inset-0">
-             <Image referrerPolicy="no-referrer" src="/images/img_097bf6cb.jpg" loading="lazy" className="w-full h-full object-cover opacity-20" alt="Background" />
+             <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1481833707121-59f4df66f73e?auto=format&fit=crop&w=800&q=80" loading="lazy" className="w-full h-full object-cover opacity-20" alt="Background" />
           </div>
           <div className="relative z-10 container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-4xl md:text-5xl font-serif text-gold mb-6 drop-shadow-md">Join Us for Your Next Cup</h2>

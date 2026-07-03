@@ -13,14 +13,14 @@ export default function Menu() {
   // Duplicating some data to make the menu look fuller for the demo
   const fullMenu = [
     ...FEATURED_MENU.map(i => ({ ...i, calories: Math.floor(Math.random() * 300) + 50 })),
-    { id: 'm7', name: 'Cappuccino', description: 'Equal parts espresso, steamed milk, and foam.', price: '$4.50', category: 'Espresso', calories: 120, image: '/images/img_b468ee2c.jpg' },
-    { id: 'm8', name: 'Cortado', description: 'Espresso cut with a small amount of warm milk to reduce acidity.', price: '$4.00', category: 'Espresso', calories: 80, image: '/images/img_be06a317.jpg' },
-    { id: 'm9', name: 'Avocado Toast', description: 'Smashed avocado, cherry tomatoes, radish, and microgreens on sourdough.', price: '$9.50', category: 'Breakfast', calories: 350, image: '/images/img_128ac12e.jpg', popular: true },
-    { id: 'm10', name: 'Earl Grey Tea', description: 'Classic black tea infused with bergamot orange.', price: '$3.50', category: 'Tea', calories: 2, image: '/images/img_eb1802fb.jpg' },
-    { id: 'm11', name: 'Vanilla Bean Scone', description: 'Tender crumb scone glazed with real vanilla bean icing.', price: '$3.50', category: 'Desserts', calories: 420, image: '/images/img_70e05d4a.jpg' },
-    { id: 'm12', name: 'Nitro Cold Brew', description: 'Cold brew infused with nitrogen for a creamy, stout-like effect.', price: '$6.00', category: 'Cold Brew', calories: 15, image: '/images/img_483479d9.jpg' },
-    { id: 'm13', name: 'Roasted Turkey Panini', description: 'Sliced turkey breast, provolone, pesto, and spinach on artisan ciabatta.', price: '$11.50', category: 'Lunch', calories: 520, image: '/images/img_08c1f5b1.jpg' },
-    { id: 'm14', name: 'Pumpkin Spice Latte', description: 'Our signature espresso and steamed milk with pumpkin, cinnamon, nutmeg, and clove.', price: '$5.50', category: 'Seasonal', calories: 380, image: '/images/img_bb901bc0.jpg', popular: true }
+    { id: 'm7', name: 'Cappuccino', description: 'Equal parts espresso, steamed milk, and foam.', price: '$4.50', category: 'Espresso', calories: 120, image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80' },
+    { id: 'm8', name: 'Cortado', description: 'Espresso cut with a small amount of warm milk to reduce acidity.', price: '$4.00', category: 'Espresso', calories: 80, image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80' },
+    { id: 'm9', name: 'Avocado Toast', description: 'Smashed avocado, cherry tomatoes, radish, and microgreens on sourdough.', price: '$9.50', category: 'Breakfast', calories: 350, image: 'https://images.unsplash.com/photo-1495474472201-44bbec755a58?auto=format&fit=crop&w=800&q=80', popular: true },
+    { id: 'm10', name: 'Earl Grey Tea', description: 'Classic black tea infused with bergamot orange.', price: '$3.50', category: 'Tea', calories: 2, image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80' },
+    { id: 'm11', name: 'Vanilla Bean Scone', description: 'Tender crumb scone glazed with real vanilla bean icing.', price: '$3.50', category: 'Desserts', calories: 420, image: 'https://images.unsplash.com/photo-1495474472201-44bbec755a58?auto=format&fit=crop&w=800&q=80' },
+    { id: 'm12', name: 'Nitro Cold Brew', description: 'Cold brew infused with nitrogen for a creamy, stout-like effect.', price: '$6.00', category: 'Cold Brew', calories: 15, image: 'https://images.unsplash.com/photo-1507133750070-4cb5038ea8f3?auto=format&fit=crop&w=800&q=80' },
+    { id: 'm13', name: 'Roasted Turkey Panini', description: 'Sliced turkey breast, provolone, pesto, and spinach on artisan ciabatta.', price: '$11.50', category: 'Lunch', calories: 520, image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80' },
+    { id: 'm14', name: 'Pumpkin Spice Latte', description: 'Our signature espresso and steamed milk with pumpkin, cinnamon, nutmeg, and clove.', price: '$5.50', category: 'Seasonal', calories: 380, image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80', popular: true }
   ];
 
   const filteredMenu = useMemo(() => {

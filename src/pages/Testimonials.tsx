@@ -35,7 +35,7 @@ export default function Testimonials() {
             
             {/* Adding some more hardcoded testimonials to fill out the page */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-coffee-100/50 flex flex-col items-center text-center">
-              <img referrerPolicy="no-referrer" src="/images/img_56a40793.jpg" alt="Alex Rivera" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
+              <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80" alt="Alex Rivera" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
               <div className="flex space-x-1 text-gold mb-6" aria-label="Rating: 5 out of 5 stars">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
               </div>
@@ -47,7 +47,7 @@ export default function Testimonials() {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-coffee-100/50 flex flex-col items-center text-center">
-              <img referrerPolicy="no-referrer" src="/images/img_4f363cc9.jpg" alt="Emily Chen" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
+              <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?auto=format&fit=crop&w=800&q=80" alt="Emily Chen" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
               <div className="flex space-x-1 text-gold mb-6" aria-label="Rating: 5 out of 5 stars">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
               </div>
@@ -59,7 +59,7 @@ export default function Testimonials() {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-coffee-100/50 flex flex-col items-center text-center">
-              <img referrerPolicy="no-referrer" src="/images/img_570372dc.jpg" alt="Marcus Johnson" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
+              <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1521017432531-fbd92076e4fa?auto=format&fit=crop&w=800&q=80" alt="Marcus Johnson" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
               <div className="flex space-x-1 text-gold mb-6" aria-label="Rating: 5 out of 5 stars">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
               </div>

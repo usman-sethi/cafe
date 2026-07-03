@@ -14,7 +14,7 @@ export function SEO({
   description, 
   canonical, 
   type = "website", 
-  image = "/images/img_38464f4b.jpg",
+  image = "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80",
   structuredData 
 }: SEOProps) {
   const siteName = "Luna Café";

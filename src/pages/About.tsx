@@ -49,7 +49,7 @@ export default function About() {
             </div>
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-xl">
               <img referrerPolicy="no-referrer" 
-                src="/images/img_e8158be7.jpg" 
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" 
                 alt="Coffee beans roasting" 
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -107,7 +107,7 @@ export default function About() {
               </div>
               <div className="relative h-64 lg:h-auto">
                 <img referrerPolicy="no-referrer" 
-                  src="/images/img_128ac12e.jpg" 
+                  src="https://images.unsplash.com/photo-1495474472201-44bbec755a58?auto=format&fit=crop&w=800&q=80" 
                   alt="Coffee farmer in the field" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
@@ -123,10 +123,10 @@ export default function About() {
              
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                {[
-                 { name: "Elena Rossi", role: "Head Roaster", image: "/images/img_b30d2a10.jpg" },
-                 { name: "David Chen", role: "Lead Barista", image: "/images/img_b057ee93.jpg" },
-                 { name: "Sarah Jenkins", role: "Pastry Chef", image: "/images/img_cc2e6de5.jpg" },
-                 { name: "Marcus Thorne", role: "Coffee Buyer", image: "/images/img_00e8191a.jpg" }
+                 { name: "Elena Rossi", role: "Head Roaster", image: "https://images.unsplash.com/photo-1507133750070-4cb5038ea8f3?auto=format&fit=crop&w=800&q=80" },
+                 { name: "David Chen", role: "Lead Barista", image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" },
+                 { name: "Sarah Jenkins", role: "Pastry Chef", image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" },
+                 { name: "Marcus Thorne", role: "Coffee Buyer", image: "https://images.unsplash.com/photo-1501339817388-d1d11721f542?auto=format&fit=crop&w=800&q=80" }
                ].map((member, i) => (
                  <div key={i} className="group">
                    <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4">
@@ -146,10 +146,10 @@ export default function About() {
 
           {/* Lifestyle Imagery */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img referrerPolicy="no-referrer" src="/images/img_7354bac2.jpg" alt="Lifestyle 1" className="w-full h-64 object-cover rounded-xl" loading="lazy" />
-            <img referrerPolicy="no-referrer" src="/images/img_e5bf5a4d.jpg" alt="Lifestyle 2" className="w-full h-64 object-cover rounded-xl mt-8" loading="lazy" />
-            <img referrerPolicy="no-referrer" src="/images/img_eaad4bbc.jpg" alt="Lifestyle 3" className="w-full h-64 object-cover rounded-xl" loading="lazy" />
-            <img referrerPolicy="no-referrer" src="/images/img_38f84fe4.jpg" alt="Lifestyle 4" className="w-full h-64 object-cover rounded-xl mt-8" loading="lazy" />
+            <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Lifestyle 1" className="w-full h-64 object-cover rounded-xl" loading="lazy" />
+            <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Lifestyle 2" className="w-full h-64 object-cover rounded-xl mt-8" loading="lazy" />
+            <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80" alt="Lifestyle 3" className="w-full h-64 object-cover rounded-xl" loading="lazy" />
+            <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Lifestyle 4" className="w-full h-64 object-cover rounded-xl mt-8" loading="lazy" />
           </div>
 
         </div>

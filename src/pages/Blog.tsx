@@ -11,7 +11,7 @@ const BLOG_POSTS = [
     date: "May 15, 2024",
     category: "Brewing Guide",
     readingTime: "5 min read",
-    image: "/images/img_682d4b43.jpg"
+    image: "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const BLOG_POSTS = [
     date: "April 22, 2024",
     category: "Origins",
     readingTime: "8 min read",
-    image: "/images/img_bc577ae6.jpg"
+    image: "https://images.unsplash.com/photo-1463797221720-6b07e6426c24?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const BLOG_POSTS = [
     date: "June 05, 2024",
     category: "Seasonal",
     readingTime: "3 min read",
-    image: "/images/img_212587f2.jpg"
+    image: "https://images.unsplash.com/photo-1521017432531-fbd92076e4fa?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const BLOG_POSTS = [
     date: "July 12, 2024",
     category: "Brewing Guide",
     readingTime: "6 min read",
-    image: "/images/img_5d3c73f7.jpg"
+    image: "https://images.unsplash.com/photo-1521017432531-fbd92076e4fa?auto=format&fit=crop&w=800&q=80"
   }
 ];
 

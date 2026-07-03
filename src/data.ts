@@ -7,7 +7,7 @@ export const FEATURED_MENU: MenuItem[] = [
     description: 'Our house espresso with velvety steamed milk and a hint of vanilla bean and gold dust.',
     price: '$6.50',
     category: 'Latte',
-    image: '/images/img_9baf605d.jpg',
+    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80',
     popular: true,
   },
   {
@@ -16,7 +16,7 @@ export const FEATURED_MENU: MenuItem[] = [
     description: 'Rotating selection of single-origin beans, hand-poured for ultimate clarity and flavor.',
     price: '$5.50',
     category: 'Coffee',
-    image: '/images/img_758ce9ee.jpg',
+    image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'm3',
@@ -24,7 +24,7 @@ export const FEATURED_MENU: MenuItem[] = [
     description: 'Slow-steeped for 24 hours, incredibly smooth with chocolate and cherry tasting notes.',
     price: '$5.00',
     category: 'Cold Brew',
-    image: '/images/img_3bf94f47.jpg',
+    image: 'https://images.unsplash.com/photo-1495474472201-44bbec755a58?auto=format&fit=crop&w=800&q=80',
     badges: ['Staff Pick'],
   },
   {
@@ -33,7 +33,7 @@ export const FEATURED_MENU: MenuItem[] = [
     description: 'Ceremonial grade matcha whisked with oat milk and a touch of lavender syrup.',
     price: '$6.00',
     category: 'Tea',
-    image: '/images/img_d7fd4f68.jpg',
+    image: 'https://images.unsplash.com/photo-1507133750070-4cb5038ea8f3?auto=format&fit=crop&w=800&q=80',
     popular: true,
   },
   {
@@ -42,7 +42,7 @@ export const FEATURED_MENU: MenuItem[] = [
     description: 'Flaky, buttery, baked fresh in-house every morning.',
     price: '$4.50',
     category: 'Breakfast',
-    image: '/images/img_7354bac2.jpg',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'm6',
@@ -50,7 +50,7 @@ export const FEATURED_MENU: MenuItem[] = [
     description: 'Rich ganache in a crisp pastry shell, finished with sea salt.',
     price: '$7.00',
     category: 'Desserts',
-    image: '/images/img_d68a8929.jpg',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
   }
 ];
 
@@ -60,29 +60,29 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Sarah Jenkins',
     quote: 'The best espresso I\'ve had outside of Italy. The atmosphere is incredibly calming, making it my favorite weekend retreat.',
     rating: 5,
-    avatar: '/images/img_b6eee26d.jpg'
+    avatar: 'https://images.unsplash.com/photo-1501339817388-d1d11721f542?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 't2',
     name: 'Michael Chen',
     quote: 'Beautifully designed space and the pour-over coffee is exceptional. The staff really knows their craft.',
     rating: 5,
-    avatar: '/images/img_16221fb6.jpg'
+    avatar: 'https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 't3',
     name: 'Emma Thompson',
     quote: 'A true hidden gem. The matcha blossom is a work of art, both visually and in taste. Highly recommend reserving a table on weekends.',
     rating: 5,
-    avatar: '/images/img_cb2ae043.jpg'
+    avatar: 'https://images.unsplash.com/photo-1463797221720-6b07e6426c24?auto=format&fit=crop&w=800&q=80'
   }
 ];
 
 export const GALLERY_IMAGES = [
-  '/images/img_212587f2.jpg',
-  '/images/img_682d4b43.jpg',
-  '/images/img_dff342a7.jpg',
-  '/images/img_3e7e80bb.jpg',
-  '/images/img_38f84fe4.jpg',
-  '/images/img_e5bf5a4d.jpg',
+  'https://images.unsplash.com/photo-1521017432531-fbd92076e4fa?auto=format&fit=crop&w=800&q=80',
+  'https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80',
+  'https://images.unsplash.com/photo-1481833707121-59f4df66f73e?auto=format&fit=crop&w=800&q=80',
+  'https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=800&q=80',
+  'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80',
+  'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80',
 ];
