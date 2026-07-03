@@ -8,7 +8,7 @@ interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   loading?: "lazy" | "eager";
 }
 
-export function Image({ src, alt, className, wrapperClassName, ...props }: ImageProps) {
+export function Image({ src, alt, className, wrapperClassName, ...props }: ImageProps & { src: string; alt: string; className?: string }) {
   return (
     <div className={cn("relative overflow-hidden bg-coffee-100", wrapperClassName)}>
       <img

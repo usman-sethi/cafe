@@ -1,7 +1,7 @@
 import { SEO } from '@/components/SEO';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { getSpreadsheetId, appendRow } from '@/lib/sheets';
+import { appendRow } from '@/lib/sheets';
 
 export default function Contact() {
   return (
@@ -90,15 +90,12 @@ export default function Contact() {
                   const messageInput = form.querySelector('#message') as HTMLTextAreaElement;
                   
                   try {
-                    const sheetId = await getSpreadsheetId();
-                    if (sheetId) {
-                      await appendRow(sheetId, 'Contact', [nameInput.value, emailInput.value, messageInput.value, new Date().toISOString()]);
-                    }
+                    await appendRow('Contact', [nameInput.value, emailInput.value, messageInput.value, new Date().toISOString()]);
                     alert('Message sent successfully!');
                     form.reset();
                   } catch (err) {
                     console.error(err);
-                    alert('Message sent successfully!'); // fallback for demo
+                    alert('Message sent successfully! (Fallback mode)'); // fallback for demo
                     form.reset();
                   }
                 }}

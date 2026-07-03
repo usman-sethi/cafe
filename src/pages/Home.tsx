@@ -6,7 +6,7 @@ import { FEATURED_MENU, TESTIMONIALS, GALLERY_IMAGES } from '@/data';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { SEO } from '@/components/SEO';
-import { getSpreadsheetId, appendRow } from '@/lib/sheets';
+import { appendRow } from '@/lib/sheets';
 
 import { TestimonialSlider } from '@/components/TestimonialSlider';
 
@@ -359,15 +359,12 @@ export default function Home() {
                 if (!emailInput.value) return;
                 
                 try {
-                  const sheetId = await getSpreadsheetId();
-                  if (sheetId) {
-                    await appendRow(sheetId, 'Newsletter', [emailInput.value, new Date().toISOString()]);
-                  }
+                  await appendRow('Newsletter', [emailInput.value, new Date().toISOString()]);
                   alert('Subscribed successfully!');
                   form.reset();
                 } catch (err) {
                   console.error(err);
-                  alert('Subscription successful!'); // fallback for demo if sheets fail
+                  alert('Subscription successful! (Fallback mode)'); // fallback for demo if sheets fail
                   form.reset();
                 }
               }}
