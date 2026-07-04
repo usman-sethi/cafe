@@ -104,7 +104,7 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-0 top-0 pt-24 bg-cream z-40 md:hidden overflow-y-auto" role="dialog" aria-modal="true"
+            className="fixed inset-0 pt-24 bg-cream z-[9999] md:hidden overflow-y-auto" role="dialog" aria-modal="true"
           >
             <nav className="flex flex-col px-6 py-8" aria-label="Mobile Navigation">
               {navLinks.map((link, index) => (
