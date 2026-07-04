@@ -105,17 +105,20 @@ export default function Contact() {
                   <input 
                     type="text" 
                     id="name"
+                    name="name"
+                    autoComplete="name"
                     required
                     className="w-full bg-cream border-transparent focus:bg-white focus:border-gold focus:ring-2 focus:ring-gold/20 rounded-xl px-4 py-3 outline-none transition-all"
                     placeholder="Your name"
                   />
                 </div>
-
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium text-coffee-900">Email</label>
                   <input 
                     type="email" 
                     id="email"
+                    name="email"
+                    autoComplete="email"
                     required
                     className="w-full bg-cream border-transparent focus:bg-white focus:border-gold focus:ring-2 focus:ring-gold/20 rounded-xl px-4 py-3 outline-none transition-all"
                     placeholder="your@email.com"

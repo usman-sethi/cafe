@@ -56,7 +56,7 @@ export function TestimonialSlider() {
 
       <button 
         onClick={handlePrev}
-        className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow-md text-coffee-600 hover:text-gold hover:scale-110 transition-all z-10"
+        className="absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white shadow-md text-coffee-700 hover:text-gold hover:scale-110 transition-all z-10"
         aria-label="Previous testimonial"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -64,7 +64,7 @@ export function TestimonialSlider() {
 
       <button 
         onClick={handleNext}
-        className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow-md text-coffee-600 hover:text-gold hover:scale-110 transition-all z-10"
+        className="absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white shadow-md text-coffee-700 hover:text-gold hover:scale-110 transition-all z-10"
         aria-label="Next testimonial"
       >
         <ChevronRight className="w-6 h-6" />

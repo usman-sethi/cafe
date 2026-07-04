@@ -21,7 +21,7 @@ export default function About() {
           
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-serif text-coffee-950 mb-6">Our Story</h1>
-            <p className="text-coffee-600 max-w-2xl mx-auto text-lg leading-relaxed">
+            <p className="text-coffee-700 max-w-2xl mx-auto text-lg leading-relaxed">
               Founded on a passion for exceptional coffee and genuine connections, Luna Café is more than just a coffee shop. It's a sanctuary for the community.
             </p>
           </div>
@@ -39,18 +39,18 @@ export default function About() {
               <div className="pt-4 flex gap-8">
                 <div className="text-center">
                   <span className="block text-4xl font-serif text-gold mb-2">10+</span>
-                  <span className="text-xs uppercase tracking-widest text-coffee-600">Years of Craft</span>
+                  <span className="text-xs uppercase tracking-widest text-coffee-700">Years of Craft</span>
                 </div>
                 <div className="text-center">
                   <span className="block text-4xl font-serif text-gold mb-2">15</span>
-                  <span className="text-xs uppercase tracking-widest text-coffee-600">Direct Trade Farms</span>
+                  <span className="text-xs uppercase tracking-widest text-coffee-700">Direct Trade Farms</span>
                 </div>
               </div>
             </div>
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-xl">
               <img referrerPolicy="no-referrer" 
                 src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" 
-                alt="Coffee beans roasting" 
+                alt="Coffee beans roasting" fetchPriority="high" 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -64,7 +64,7 @@ export default function About() {
                 <Coffee className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-serif text-coffee-900 mb-3">Craftsmanship</h3>
-              <p className="text-coffee-600 text-sm">Every shot is pulled with precision, ensuring the perfect balance of crema, body, and heart.</p>
+              <p className="text-coffee-700 text-sm">Every shot is pulled with precision, ensuring the perfect balance of crema, body, and heart.</p>
             </motion.div>
 
             <motion.div initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay:0.1}} className="bg-white p-8 rounded-2xl shadow-sm border border-coffee-100/50 text-center">
@@ -72,7 +72,7 @@ export default function About() {
                 <Heart className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-serif text-coffee-900 mb-3">Passion</h3>
-              <p className="text-coffee-600 text-sm">We don't just serve coffee; we share our love for the bean and the culture surrounding it.</p>
+              <p className="text-coffee-700 text-sm">We don't just serve coffee; we share our love for the bean and the culture surrounding it.</p>
             </motion.div>
 
             <motion.div initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay:0.2}} className="bg-white p-8 rounded-2xl shadow-sm border border-coffee-100/50 text-center">
@@ -80,7 +80,7 @@ export default function About() {
                 <Users className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-serif text-coffee-900 mb-3">Community</h3>
-              <p className="text-coffee-600 text-sm">Creating a welcoming, inclusive space where neighbors gather, work, and connect.</p>
+              <p className="text-coffee-700 text-sm">Creating a welcoming, inclusive space where neighbors gather, work, and connect.</p>
             </motion.div>
 
             <motion.div initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay:0.3}} className="bg-white p-8 rounded-2xl shadow-sm border border-coffee-100/50 text-center">
@@ -88,7 +88,7 @@ export default function About() {
                 <Award className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-serif text-coffee-900 mb-3">Quality</h3>
-              <p className="text-coffee-600 text-sm">From organic milk options to locally sourced pastries, we never compromise on ingredients.</p>
+              <p className="text-coffee-700 text-sm">From organic milk options to locally sourced pastries, we never compromise on ingredients.</p>
             </motion.div>
           </div>
 
@@ -107,7 +107,7 @@ export default function About() {
               </div>
               <div className="relative h-64 lg:h-auto">
                 <img referrerPolicy="no-referrer" 
-                  src="https://images.unsplash.com/photo-1495474472201-44bbec755a58?auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" 
                   alt="Coffee farmer in the field" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
@@ -123,10 +123,10 @@ export default function About() {
              
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                {[
-                 { name: "Elena Rossi", role: "Head Roaster", image: "https://images.unsplash.com/photo-1507133750070-4cb5038ea8f3?auto=format&fit=crop&w=800&q=80" },
+                 { name: "Elena Rossi", role: "Head Roaster", image: "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" },
                  { name: "David Chen", role: "Lead Barista", image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" },
                  { name: "Sarah Jenkins", role: "Pastry Chef", image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" },
-                 { name: "Marcus Thorne", role: "Coffee Buyer", image: "https://images.unsplash.com/photo-1501339817388-d1d11721f542?auto=format&fit=crop&w=800&q=80" }
+                 { name: "Marcus Thorne", role: "Coffee Buyer", image: "https://images.unsplash.com/photo-1536514072410-5019a3c69182?auto=format&fit=crop&w=800&q=80" }
                ].map((member, i) => (
                  <div key={i} className="group">
                    <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4">
@@ -138,7 +138,7 @@ export default function About() {
                      />
                    </div>
                    <h3 className="text-xl font-serif text-coffee-950 mb-1">{member.name}</h3>
-                   <span className="text-coffee-600 text-sm">{member.role}</span>
+                   <span className="text-coffee-700 text-sm">{member.role}</span>
                  </div>
                ))}
              </div>

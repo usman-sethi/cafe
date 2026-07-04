@@ -31,7 +31,7 @@ export default function Gallery() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-serif text-coffee-950 mb-6">Our Gallery</h1>
-            <p className="text-coffee-600 max-w-2xl mx-auto text-lg">
+            <p className="text-coffee-700 max-w-2xl mx-auto text-lg">
               A visual journey through our crafted spaces and signature offerings.
             </p>
           </div>

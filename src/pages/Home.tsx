@@ -23,7 +23,7 @@ const BLOG_POSTS_PREVIEW = [
     title: "Summer Menu Highlight: Lavender Cold Brew",
     category: "Seasonal",
     date: "June 05, 2024",
-    image: "https://images.unsplash.com/photo-1521017432531-fbd92076e4fa?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-serif text-coffee-950 mb-4">Curated Selections</h2>
-              <p className="text-coffee-600 max-w-2xl mx-auto">Discover our most loved artisan beverages and fresh pastries, crafted with uncompromising quality.</p>
+              <p className="text-coffee-700 max-w-2xl mx-auto">Discover our most loved artisan beverages and fresh pastries, crafted with uncompromising quality.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -129,7 +129,7 @@ export default function Home() {
                       <h3 className="text-xl font-serif font-semibold text-coffee-900">{item.name}</h3>
                       <span className="text-lg font-medium text-coffee-700">{item.price}</span>
                     </div>
-                    <p className="text-coffee-600 text-sm leading-relaxed mb-4">{item.description}</p>
+                    <p className="text-coffee-700 text-sm leading-relaxed mb-4">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
                 <div className="absolute -bottom-8 -left-8 bg-cream p-8 rounded-2xl max-w-xs shadow-2xl hidden md:block">
                   <p className="font-serif text-2xl text-coffee-950 italic mb-2">"A perfect balance of flavor and warmth."</p>
-                  <span className="text-sm text-coffee-600 font-semibold uppercase tracking-wider">— The Coffee Guide</span>
+                  <span className="text-sm text-coffee-700 font-semibold uppercase tracking-wider">— The Coffee Guide</span>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function Home() {
             <div className="text-center mb-20">
               <span className="text-gold font-bold tracking-widest uppercase text-sm mb-4 block">Our Pride</span>
               <h2 className="text-4xl md:text-5xl font-serif text-coffee-950 mb-6">Signature Creations</h2>
-              <p className="text-coffee-600 max-w-2xl mx-auto text-lg">Unique flavor profiles you won't find anywhere else, developed over months of tasting and refinement.</p>
+              <p className="text-coffee-700 max-w-2xl mx-auto text-lg">Unique flavor profiles you won't find anywhere else, developed over months of tasting and refinement.</p>
             </div>
 
             <div className="space-y-32">
@@ -218,7 +218,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
                 <div className="w-full md:w-1/2">
                   <div className="relative aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                    <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1481833707121-59f4df66f73e?auto=format&fit=crop&w=800&q=80" alt="Lavender Honey Latte" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
+                    <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Lavender Honey Latte" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-6">
@@ -227,7 +227,7 @@ export default function Home() {
                     <span className="text-xs font-bold uppercase tracking-wider text-coffee-900">Customer Favorite</span>
                   </div>
                   <h3 className="text-4xl font-serif text-coffee-950">Lavender Honey Latte</h3>
-                  <p className="text-coffee-600 text-lg leading-relaxed">Our most requested drink. We start with a double shot of our bright, citrusy Ethiopian espresso, then gently fold in steamed oat milk, local wildflower honey, and our house-made lavender reduction.</p>
+                  <p className="text-coffee-700 text-lg leading-relaxed">Our most requested drink. We start with a double shot of our bright, citrusy Ethiopian espresso, then gently fold in steamed oat milk, local wildflower honey, and our house-made lavender reduction.</p>
                   
                   <div className="pt-6 border-t border-coffee-100">
                     <h4 className="font-serif text-xl text-coffee-900 mb-4">Key Ingredients</h4>
@@ -253,12 +253,12 @@ export default function Home() {
               <div className="flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-24">
                 <div className="w-full md:w-1/2">
                   <div className="relative aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                    <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=800&q=80" alt="Smoked Maple Cold Brew" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
+                    <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Smoked Maple Cold Brew" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" loading="lazy" />
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-6">
                   <h3 className="text-4xl font-serif text-coffee-950">Smoked Maple Cold Brew</h3>
-                  <p className="text-coffee-600 text-lg leading-relaxed">A complex, savory-sweet experience. Our 18-hour cold brew infused with real Vermont maple syrup and a hint of hickory smoke. Served over large crystal ice and topped with a dash of sea salt.</p>
+                  <p className="text-coffee-700 text-lg leading-relaxed">A complex, savory-sweet experience. Our 18-hour cold brew infused with real Vermont maple syrup and a hint of hickory smoke. Served over large crystal ice and topped with a dash of sea salt.</p>
                   
                   <div className="pt-6 border-t border-coffee-100">
                     <h4 className="font-serif text-xl text-coffee-900 mb-4">Key Ingredients</h4>
@@ -349,7 +349,7 @@ export default function Home() {
         <section className="py-24 bg-cream border-t border-coffee-100">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-serif text-coffee-950 mb-6">Join Our Community</h2>
-            <p className="text-coffee-600 mb-10 text-lg">Subscribe to receive updates on seasonal menus, special events, and brewing tips directly to your inbox.</p>
+            <p className="text-coffee-700 mb-10 text-lg">Subscribe to receive updates on seasonal menus, special events, and brewing tips directly to your inbox.</p>
             <form 
               className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" 
               onSubmit={async (e) => { 
@@ -385,7 +385,7 @@ export default function Home() {
         {/* Final CTA */}
         <section className="relative py-32 bg-coffee-900 overflow-hidden">
           <div className="absolute inset-0">
-             <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1481833707121-59f4df66f73e?auto=format&fit=crop&w=800&q=80" loading="lazy" className="w-full h-full object-cover opacity-20" alt="Background" />
+             <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" loading="lazy" className="w-full h-full object-cover opacity-20" alt="Background" />
           </div>
           <div className="relative z-10 container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-4xl md:text-5xl font-serif text-gold mb-6 drop-shadow-md">Join Us for Your Next Cup</h2>

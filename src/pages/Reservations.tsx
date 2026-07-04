@@ -65,7 +65,7 @@ export default function Reservations() {
             {/* Image Side */}
             <div className="lg:w-1/2 relative min-h-[300px] lg:min-h-full">
               <img referrerPolicy="no-referrer" 
-                src="https://images.unsplash.com/photo-1501339817388-d1d11721f542?auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1536514072410-5019a3c69182?auto=format&fit=crop&w=800&q=80" 
                 alt="Café table" 
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
@@ -92,7 +92,7 @@ export default function Reservations() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium text-coffee-900">Full Name</label>
-                      <input id="name" 
+                      <input id="name" name="name" autoComplete="name" 
                         {...register('name')}
                         className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
                         placeholder="John Doe"
@@ -102,7 +102,7 @@ export default function Reservations() {
                     
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium text-coffee-900">Email Address</label>
-                      <input id="email" 
+                      <input id="email" name="email" autoComplete="email" 
                         type="email"
                         {...register('email')}
                         className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
@@ -161,7 +161,7 @@ export default function Reservations() {
 
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-sm font-medium text-coffee-900">Phone Number</label>
-                    <input id="phone" 
+                    <input id="phone" name="phone" autoComplete="tel" 
                       type="tel"
                       {...register('phone')}
                       className="w-full px-4 py-3 rounded-xl border border-coffee-200 bg-coffee-50/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
@@ -200,7 +200,7 @@ export default function Reservations() {
                   <CheckCircle2 className="w-10 h-10" />
                 </div>
                 <h3 className="text-3xl font-serif text-coffee-950">Reservation Confirmed!</h3>
-                <p className="text-coffee-600 max-w-sm">
+                <p className="text-coffee-700 max-w-sm">
                   Thank you for choosing Luna Café. We've sent a confirmation email with your reservation details.
                 </p>
                 <Button 

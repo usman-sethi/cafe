@@ -13,7 +13,7 @@ export default function Testimonials() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-serif text-coffee-950 mb-6">Guest Experiences</h1>
-            <p className="text-coffee-600 max-w-2xl mx-auto text-lg">
+            <p className="text-coffee-700 max-w-2xl mx-auto text-lg">
               We take pride in creating memorable moments for every guest who walks through our doors.
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function Testimonials() {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-coffee-100/50 flex flex-col items-center text-center">
-              <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1521017432531-fbd92076e4fa?auto=format&fit=crop&w=800&q=80" alt="Marcus Johnson" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
+              <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=800&q=80" alt="Marcus Johnson" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
               <div className="flex space-x-1 text-gold mb-6" aria-label="Rating: 5 out of 5 stars">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
               </div>
