@@ -30,7 +30,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg font-medium mb-6 text-gold">Quick Links</h4>
+            <h3 className="font-serif text-lg font-medium mb-6 text-gold">Quick Links</h3>
             <ul className="space-y-3">
               {['Our Story', 'Menu', 'Reservations', 'Gallery', 'Contact'].map((item) => (
                 <li key={item}>
@@ -44,7 +44,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif text-lg font-medium mb-6 text-gold">Visit Us</h4>
+            <h3 className="font-serif text-lg font-medium mb-6 text-gold">Visit Us</h3>
             <ul className="space-y-4 text-coffee-200 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gold shrink-0" />
@@ -63,7 +63,7 @@ export function Footer() {
 
           {/* Hours */}
           <div>
-            <h4 className="font-serif text-lg font-medium mb-6 text-gold">Opening Hours</h4>
+            <h3 className="font-serif text-lg font-medium mb-6 text-gold">Opening Hours</h3>
             <ul className="space-y-3 text-coffee-200 text-sm">
               <li className="flex justify-between border-b border-coffee-800 pb-2">
                 <span>Mon - Fri</span>

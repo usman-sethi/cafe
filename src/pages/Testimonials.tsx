@@ -36,7 +36,7 @@ export default function Testimonials() {
             {/* Adding some more hardcoded testimonials to fill out the page */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-coffee-100/50 flex flex-col items-center text-center">
               <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80" alt="Alex Rivera" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
-              <div className="flex space-x-1 text-gold mb-6" aria-label="Rating: 5 out of 5 stars">
+              <div className="flex space-x-1 text-gold mb-6" role="img" aria-label="Rating: 5 out of 5 stars">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
               </div>
               <p className="text-coffee-700 italic mb-8 leading-relaxed">"The pour-over is absolutely incredible. It's rare to find a place that pays this much attention to the subtle notes of single-origin beans."</p>
@@ -48,7 +48,7 @@ export default function Testimonials() {
 
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-coffee-100/50 flex flex-col items-center text-center">
               <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?auto=format&fit=crop&w=800&q=80" alt="Emily Chen" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
-              <div className="flex space-x-1 text-gold mb-6" aria-label="Rating: 5 out of 5 stars">
+              <div className="flex space-x-1 text-gold mb-6" role="img" aria-label="Rating: 5 out of 5 stars">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
               </div>
               <p className="text-coffee-700 italic mb-8 leading-relaxed">"My favorite study spot. The ambiance is perfect, the Wi-Fi is reliable, and the matcha latte is the best I've had in the city."</p>
@@ -60,7 +60,7 @@ export default function Testimonials() {
 
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-coffee-100/50 flex flex-col items-center text-center">
               <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=800&q=80" alt="Marcus Johnson" loading="lazy" className="w-20 h-20 rounded-full object-cover mb-6 ring-4 ring-coffee-50" />
-              <div className="flex space-x-1 text-gold mb-6" aria-label="Rating: 5 out of 5 stars">
+              <div className="flex space-x-1 text-gold mb-6" role="img" aria-label="Rating: 5 out of 5 stars">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
               </div>
               <p className="text-coffee-700 italic mb-8 leading-relaxed">"The almond croissants are life-changing. Always perfectly flaky and paired perfectly with their house blend cortado."</p>

@@ -70,16 +70,18 @@ export function TestimonialSlider() {
         <ChevronRight className="w-6 h-6" />
       </button>
       
-      <div className="flex justify-center space-x-3 mt-8">
+      <div className="flex justify-center space-x-1 mt-8">
         {TESTIMONIALS.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrentIndex(i)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              i === currentIndex ? 'bg-gold w-8' : 'bg-coffee-200 hover:bg-gold/50'
-            }`}
+            className="w-11 h-11 flex items-center justify-center"
             aria-label={`Go to testimonial ${i + 1}`}
-          />
+          >
+            <div className={`h-2 rounded-full transition-all duration-300 ${
+              i === currentIndex ? 'bg-gold w-8' : 'w-2 bg-coffee-200 hover:bg-gold/50'
+            }`} />
+          </button>
         ))}
       </div>
     </div>

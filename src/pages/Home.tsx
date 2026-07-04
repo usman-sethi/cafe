@@ -160,27 +160,27 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <motion.div whileHover={{ y: -5 }} className="flex flex-col space-y-3 transition-transform">
                     <Leaf className="h-8 w-8 text-gold" />
-                    <h4 className="font-serif text-xl">Fresh Beans</h4>
+                    <h3 className="font-serif text-xl">Fresh Beans</h3>
                     <p className="text-coffee-300 text-sm">Roasted weekly in small batches to ensure maximum flavor and aroma.</p>
                   </motion.div>
                   <motion.div whileHover={{ y: -5 }} className="flex flex-col space-y-3 transition-transform">
                     <Leaf className="h-8 w-8 text-gold" />
-                    <h4 className="font-serif text-xl">Organic Ingredients</h4>
+                    <h3 className="font-serif text-xl">Organic Ingredients</h3>
                     <p className="text-coffee-300 text-sm">Direct-trade, ethically sourced beans from sustainable farms worldwide.</p>
                   </motion.div>
                   <motion.div whileHover={{ y: -5 }} className="flex flex-col space-y-3 transition-transform">
                     <Star className="h-8 w-8 text-gold" />
-                    <h4 className="font-serif text-xl">Expert Baristas</h4>
+                    <h3 className="font-serif text-xl">Expert Baristas</h3>
                     <p className="text-coffee-300 text-sm">Our team trains rigorously to master the art of extraction and pouring.</p>
                   </motion.div>
                   <motion.div whileHover={{ y: -5 }} className="flex flex-col space-y-3 transition-transform">
                     <Clock className="h-8 w-8 text-gold" />
-                    <h4 className="font-serif text-xl">Fresh Bakery</h4>
+                    <h3 className="font-serif text-xl">Fresh Bakery</h3>
                     <p className="text-coffee-300 text-sm">Pastries baked fresh in-house every morning before the sun rises.</p>
                   </motion.div>
                   <motion.div whileHover={{ y: -5 }} className="flex flex-col space-y-3 transition-transform">
                     <Wifi className="h-8 w-8 text-gold" />
-                    <h4 className="font-serif text-xl">Cozy Atmosphere</h4>
+                    <h3 className="font-serif text-xl">Cozy Atmosphere</h3>
                     <p className="text-coffee-300 text-sm">Fast fiber WiFi, ample outlets, and comfortable seating for hours.</p>
                   </motion.div>
                 </div>
@@ -230,7 +230,7 @@ export default function Home() {
                   <p className="text-coffee-700 text-lg leading-relaxed">Our most requested drink. We start with a double shot of our bright, citrusy Ethiopian espresso, then gently fold in steamed oat milk, local wildflower honey, and our house-made lavender reduction.</p>
                   
                   <div className="pt-6 border-t border-coffee-100">
-                    <h4 className="font-serif text-xl text-coffee-900 mb-4">Key Ingredients</h4>
+                    <h3 className="font-serif text-xl text-coffee-900 mb-4">Key Ingredients</h3>
                     <ul className="space-y-3">
                       <li className="flex items-center text-coffee-700">
                         <Leaf className="w-5 h-5 text-gold mr-3" />
@@ -261,7 +261,7 @@ export default function Home() {
                   <p className="text-coffee-700 text-lg leading-relaxed">A complex, savory-sweet experience. Our 18-hour cold brew infused with real Vermont maple syrup and a hint of hickory smoke. Served over large crystal ice and topped with a dash of sea salt.</p>
                   
                   <div className="pt-6 border-t border-coffee-100">
-                    <h4 className="font-serif text-xl text-coffee-900 mb-4">Key Ingredients</h4>
+                    <h3 className="font-serif text-xl text-coffee-900 mb-4">Key Ingredients</h3>
                     <ul className="space-y-3">
                       <li className="flex items-center text-coffee-700">
                         <Leaf className="w-5 h-5 text-gold mr-3" />
