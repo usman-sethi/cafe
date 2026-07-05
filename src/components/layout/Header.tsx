@@ -1,14 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Coffee } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { Menu, X, Coffee, ChevronRight } from 'lucide-react';
+import gsap from 'gsap';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [renderMobileMenu, setRenderMobileMenu] = useState(false);
   const location = useLocation();
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +34,39 @@ export function Header() {
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      setRenderMobileMenu(true);
+    } else if (renderMobileMenu && menuRef.current) {
+      gsap.to(menuRef.current, {
+        opacity: 0,
+        x: '100%',
+        duration: 0.4,
+        ease: 'power3.in',
+        onComplete: () => {
+          setRenderMobileMenu(false);
+        }
+      });
+    }
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    if (renderMobileMenu && isMobileMenuOpen && menuRef.current) {
+      gsap.fromTo(
+        menuRef.current,
+        { opacity: 0, x: '100%' },
+        { opacity: 1, x: '0%', duration: 0.5, ease: 'power3.out' }
+      );
+      
+      const items = menuRef.current.querySelectorAll('.mobile-nav-item');
+      gsap.fromTo(
+        items,
+        { opacity: 0, x: 30 },
+        { opacity: 1, x: 0, duration: 0.4, stagger: 0.05, ease: 'power3.out', delay: 0.2 }
+      );
+    }
+  }, [renderMobileMenu, isMobileMenuOpen]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -110,50 +145,39 @@ export function Header() {
       </header>
 
       {/* Mobile Nav */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-0 top-0 pt-24 bg-cream z-40 md:hidden overflow-y-auto" role="dialog" aria-modal="true"
-          >
-            <nav className="flex flex-col px-6 py-8" aria-label="Mobile Navigation">
-              {navLinks.map((link, index) => (
-                <motion.div
-                  key={link.name}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.05 + 0.1 }}
+      {renderMobileMenu && (
+        <div
+          ref={menuRef}
+          className="fixed inset-0 top-0 pt-24 bg-cream z-40 md:hidden overflow-y-auto" role="dialog" aria-modal="true"
+        >
+          <nav className="flex flex-col px-6 py-8" aria-label="Mobile Navigation">
+            {navLinks.map((link, index) => (
+              <div key={link.name} className="mobile-nav-item">
+                <Link
+                  to={link.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={cn(
+                    "block py-4 text-3xl font-serif border-b border-coffee-200/50 relative overflow-hidden group",
+                    location.pathname === link.path ? 'text-gold' : 'text-coffee-900'
+                  )}
+                  aria-current={location.pathname === link.path ? 'page' : undefined}
                 >
-                  <Link
-                    to={link.path}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={cn(
-                      "block py-4 text-3xl font-serif border-b border-coffee-200/50",
-                      location.pathname === link.path ? 'text-gold' : 'text-coffee-900'
-                    )}
-                    aria-current={location.pathname === link.path ? 'page' : undefined}
-                  >
+                  <span className="relative z-10 group-hover:pl-4 transition-all duration-300 flex items-center">
                     {link.name}
-                  </Link>
-                </motion.div>
-              ))}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: navLinks.length * 0.05 + 0.1 }}
-                className="mt-12"
-              >
-                <Button asChild className="w-full h-14 text-lg rounded-full" size="lg">
-                  <Link to="/reservations" onClick={() => setIsMobileMenuOpen(false)}>Book a Table</Link>
-                </Button>
-              </motion.div>
-            </nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                    <ChevronRight className="w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ml-2" />
+                  </span>
+                  <div className="absolute inset-0 bg-coffee-50 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out" />
+                </Link>
+              </div>
+            ))}
+            <div className="mobile-nav-item mt-12">
+              <Button asChild className="w-full h-14 text-lg rounded-full" size="lg">
+                <Link to="/reservations" onClick={() => setIsMobileMenuOpen(false)}>Book a Table</Link>
+              </Button>
+            </div>
+          </nav>
+        </div>
+      )}
     </>
   );
 }
