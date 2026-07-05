@@ -46,6 +46,7 @@ export default function Home() {
               src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80"
               alt="Café interior"
               className="w-full h-full object-cover scale-110 origin-top"
+              wrapperClassName="w-full h-full absolute inset-0"
               fetchPriority="high"
             />
             <div className="absolute inset-0 bg-coffee-950/60 mix-blend-multiply" />
